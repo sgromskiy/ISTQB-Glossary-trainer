@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .start-btn {
+    @apply bg-sky-800 text-lg font-semibold tracking-wider p-4 w-48 rounded-full text-white border-2 border-sky-800 hover:bg-transparent hover:text-sky-800 transition-colors;
+  }
+}
+
+@layer utilities {
+  .clip {
+    clip-path: polygon(100% 0, 0 0, 0 100%);
+  }
+
+  .incorrect {
+    @apply border-red-500;
+  }
+}
